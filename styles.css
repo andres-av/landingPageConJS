@@ -1,5 +1,5 @@
 /* <!-- HERO SECTION --> */
-.centerHero{
+.centerHero {
     height: 100vh;
     margin: 25vh 15vh;
 }
@@ -15,12 +15,12 @@
     width: 50vw;
 }
 
-.heroImg{
+.heroImg {
     width: 100vw;
     height: 100vh;
 }
 
-.heroBtn{
+.heroBtn {
     margin-left: 1vw;
 }
 /* <!-- END OF HERO SECTION --> */
@@ -31,16 +31,16 @@
     padding: 15vh 10vw;
 }
 
-.eachFeature{
+.eachFeature {
     margin: 0vw 5vw;
 }
 
-.featureIcon{
+.featureIcon {
     font-size: 6rem;
     color: rgba(43, 114, 202);
 }
 
-.featureText{
+.featureText {
     font-family: 'Lato', sans-serif;
     font-size: larger;
     width: 20vw;
@@ -51,53 +51,91 @@
 /* <!-- END OF HORIZONTAL FEATURES (Fully Responsive, Bootstrap 4 Ready, Easy to use) --> */
 
 /* <!-- HORIZONTAL CARDS (Fully Responsive Design, Updated for Bootstrap 4, Easy to use and Customize) --> */
-.cardContainer{
+.cardContainer {
     max-width: 100vw;
 }
 
-.cardText{
+.cardText {
     width: 50%;
 }
 
-.cardImg{
+.cardImg {
     width: 50%;
 }
 
-.cardTextPosition{
+.cardTextPosition {
     margin: 15vh 10vw;
 }
 
-.cardTitle{
+.cardTitle {
     font-size: 3rem;
 }
 
-.cardP{
+.cardP {
     font-size: 1.5rem;
 }
 
 /* <!-- END OF HORIZONTAL CARDS (Fully Responsive Design, Updated for Bootstrap 4, Easy to use and Customize) --> */
 
 /* <!-- WHAT PEOPLE ARE SAYING --> */
-.container{
+.container {
     padding-top: 15vh;
     max-width: 100vw;
     background-color: rgba(233, 235, 237, 0.70);
 }
 
-.peopleTitle h2{
+.peopleTitle h2 {
     font-size: 3rem;
     width: fit-content;
     margin: 0 auto;
 }
 
-.flexCard{
+.flexCard {
     width: 25vw;
     margin: 15vh 5vw;
     text-align: center;
 }
 
-.flexCard h2,p{
+.flexCard h2,p {
     margin-top: 5vh;
 }
 
 /* <!-- END OF WHAT PEOPLE ARE SAYING --> */
+/* <!-- 2ND HERO SECTION --> */
+.centerSecondHero {
+    height: 50vh;
+    margin: 10vh 15vw;
+}
+
+.secondHeroText {
+    font-size: 70px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10vh;
+}
+
+.secondHeroImg {
+    width: 100vw;
+    height: 60vh;
+}
+/* <!-- END OF 2ND HERO SECTION --> */
+/* <!-- FOOTER --> */
+.footerContainer {
+    padding: 5vh 5vw;
+}
+
+.footerTextLinks h6 {
+    color: rgba(43, 114, 202);
+    margin: 0vh 1.5vw;
+}
+
+.rightsReserved p {
+    margin: 1vh 1.5vw;
+}
+
+.footerIcons i {
+    color: rgba(43, 114, 202);
+    font-size: 3em;
+    margin: 0vh 1.5vw;
+}
+/* <!-- END OF FOOTER --> */

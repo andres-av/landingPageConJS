@@ -34,6 +34,7 @@
 </head>
 
 <body>
+    <header>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid ms-5">
@@ -49,7 +50,8 @@
         </div>
       </nav>
       <!-- END OF NAVBAR -->
-
+    </header>
+    <main>
     <!-- HERO SECTION -->
         <div class="d-flex position-absolute flex-column align-items-center centerHero">
             <div class="heroTextBox">
@@ -117,27 +119,64 @@
     <!-- END OF HORIZONTAL CARDS (Fully Responsive Design, Updated for Bootstrap 4, Easy to use and Customize) -->
 
     <!-- WHAT PEOPLE ARE SAYING -->
-<div class="container">
-    <div class="peopleTitle"><h2>What People Are Saying...</h2></div>
-    <div class="d-flex flex-row">
-        <div class="flexCard">
-            <div><img src="./img/woman1.jpg" class="img-thumbnail rounded-circle shadow-lg mb-5 bg-body rounded" alt=""></div>
-            <div><h2>Margaret E.</h2></div>
-            <div><p>"This is fantastic!! It looks Amazing!"</p></div>
-        </div>
-        <div class="flexCard">
-            <div><img src="./img/woman2.jpg" class="img-thumbnail rounded-circle shadow-lg mb-5 bg-body rounded" alt=""></div>
-            <div><h2>Caroline H.</h2></div>
-            <div><p>"Bootstrap is Amazin, I've been using it since I was born, it was my first toy"</p></div>
-        </div>
-        <div class="flexCard">
-            <div><img src="./img/woman3.jpg" class="img-thumbnail rounded-circle shadow-lg mb-5 bg-body rounded" alt=""></div>
-            <div><h2>Sarah B.</h2></div>
-            <div>
-                <p>"I never learned to use CSS properly, so Bootstrap have become my hero and savior and I cannot do anything
-                    without it"</p>
+    <div class="container">
+        <div class="peopleTitle"><h2>What People Are Saying...</h2></div>
+        <div class="d-flex flex-row">
+            <div class="flexCard">
+                <div><img src="./img/woman1.jpg" class="img-thumbnail rounded-circle shadow-lg mb-5 bg-body rounded" alt=""></div>
+                <div><h2>Margaret E.</h2></div>
+                <div><p>"This is fantastic!! It looks Amazing!"</p></div>
+            </div>
+            <div class="flexCard">
+                <div><img src="./img/woman2.jpg" class="img-thumbnail rounded-circle shadow-lg mb-5 bg-body rounded" alt=""></div>
+                <div><h2>Caroline H.</h2></div>
+                <div><p>"Bootstrap is Amazin, I've been using it since I was born, it was my first toy"</p></div>
+            </div>
+            <div class="flexCard">
+                <div><img src="./img/woman3.jpg" class="img-thumbnail rounded-circle shadow-lg mb-5 bg-body rounded" alt=""></div>
+                <div><h2>Sarah B.</h2></div>
+                <div>
+                    <p>"I never learned to use CSS properly, so Bootstrap have become my hero and savior and I cannot do anything
+                        without it"</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
     <!-- END OF WHAT PEOPLE ARE SAYING -->
+
+    <!-- 2ND HERO SECTION -->
+    <div class="d-flex position-absolute flex-column align-items-center centerSecondHero">
+        <div class="heroTextBox">
+            <h2 class="text-white secondHeroText text-center">Ready to get started? Sign up now!</h2>
+        </div>
+        <div class="d-flex">
+            <input type="email" class="form-control emailInput py-3" aria-describedby="emailHelp"
+                placeholder="Enter your email">
+            <button type="button" class="btn btn-primary heroBtn py-3">Sign Up!</button>
+        </div>
+    </div>
+    <img src="./img/bg-masthead.jpg" class="img-fluid secondHeroImg" alt="background">
+    </main>
+    <!-- END OF 2ND HERO SECTION -->
+    <!-- FOOTER -->
+    <footer>
+        <div class="d-flex justify-content-between footerContainer">
+            <div>
+                <div>
+                    <div class="d-flex footerTextLinks">
+                        <h6>About</h6>
+                        <h6>Contact</h6>
+                        <h6>Terms of use</h6>
+                        <h6>Privacy Policy</h6>
+                    </div>
+                    <div class="rightsReserved"><p>4Geeks Academy. 2022. All copyrights reserved</p></div>
+                </div>
+            </div>
+            <div class="footerIcons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- END OF FOOTER -->
