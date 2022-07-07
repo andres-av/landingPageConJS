@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Custom Fonts -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,7 +27,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Run server msg -->
     <!-- npx http-server --yes -c-1 -->
+    <!-- END OF Run server msg -->
 
 </head>
 
@@ -49,148 +51,93 @@
       <!-- END OF NAVBAR -->
 
     <!-- HERO SECTION -->
-        <div class="d-flex position-absolute flex-column align-items-center">
-            <div>
-                <h2 class="text-white fw-bold mx-4" style="font-size: 60px;">Build a landing page for your business or project and generate more leads!</h2>
+        <div class="d-flex position-absolute flex-column align-items-center centerHero">
+            <div class="heroTextBox">
+                <h2 class="text-white heroText text-center">Build a landing page for your business or project and generate more leads!</h2>
             </div>
             <div class="d-flex">
-                <input type="email" class="form-control emailInput" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
-                <button type="button" class="btn btn-primary ms-2 px-5 text-nowrap">Sign Up!</button>
+                <input type="email" class="form-control emailInput py-3" aria-describedby="emailHelp" placeholder="Enter your email">
+                <button type="button" class="btn btn-primary heroBtn py-3">Sign Up!</button>
             </div>
         </div>
-        <img src="./img/bg-masthead.jpg"  class="img-fluid" width="100%" alt="background">
+        <img src="./img/bg-masthead.jpg"  class="img-fluid heroImg" alt="background">
     <!-- END OF HERO SECTION -->
 
-    <!-- Page Content -->
+    <!-- HORIZONTAL FEATURES (Fully Responsive, Bootstrap 4 Ready, Easy to use) -->
+        <div class="d-flex justify-content-center bg-light threeFeatures">
+            <div class="d-flex flex-column align-items-center eachFeature">
+                <div><i class="bi bi-display featureIcon"></i></div>
+                <div><h2>Fully Responsive</h2></div>
+                <div class="featureText"><p>This theme will look great on any device, no matter the size!</p></div>
+            </div>
+            <div class="d-flex flex-column align-items-center eachFeature">
+                <div><i class="bi bi-layers featureIcon"></i></div>
+                <div><h2>Bootstrap 4 Ready</h2></div>
+                <div class="featureText"><p>Featuring the lastest build of the new Bootstrap 4 framework!</p></div>
+            </div>
+            <div class="d-flex flex-column align-items-center eachFeature">
+                <div><i class="bi bi-check2-circle featureIcon"></i></div>
+                <div><h2>Easy to Use</h2></div>
+                <div class="featureText"><p>Ready to use with your own content or customize the source files!</p></div>
+            </div>
+        </div>
+    <!-- END OF HORIZONTAL FEATURES (Fully Responsive, Bootstrap 4 Ready, Easy to use) -->
 
-	<a  name="services"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
-                    <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="" alt="">
+    <!-- HORIZONTAL CARDS (Fully Responsive Design, Updated for Bootstrap 4, Easy to use and Customize) -->
+        <div class="d-flex cardContainer">
+            <div class="cardText">
+                <div class="cardTextPosition">
+                    <h2 class="cardTitle">Fully Responsive Design</h2>
+                    <p class="cardP">When you use a theme created by Start Bootstrap you know that the theme will look great on any device, wether it is a
+                        phone, tablet or a desktop, the page will behave responsively!</p>
                 </div>
             </div>
-
+            <div class="cardImg"><img src="./img/bg-showcase-1.jpg" class="img-fluid" alt=""></div>
         </div>
-        <!-- /.container -->
+        <div class="d-flex cardContainer">
+            <div class="cardImg"><img src="./img/bg-showcase-2.jpg" class="img-fluid" alt=""></div>
+            <div class="cardText">
+                <div class="cardTextPosition">
+                    <h2 class="cardTitle">Updated for Bootstrap 4</h2>
+                    <p class="cardP">Newly improved and full of great utility classes. Bootstrap 4 is leading the way in mobile responsive
+                        web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex cardContainer">
+            <div class="cardText">
+                <div class="cardTextPosition">
+                    <h2 class="cardTitle">Easy to use & Customize</h2>
+                    <p class="cardP">Landing Page in HTML and CSS with a splash of SCSS for users who demand some deeper customization
+                        options. Out of the box, just add your content and images and your new landing page will be ready to go!</p>
+                </div>
+            </div>
+            <div class="cardImg"><img src="./img/bg-showcase-3.jpg" class="img-fluid" alt=""></div>
+        </div>
+    <!-- END OF HORIZONTAL CARDS (Fully Responsive Design, Updated for Bootstrap 4, Easy to use and Customize) -->
 
+    <!-- WHAT PEOPLE ARE SAYING -->
+<div class="container">
+    <div class="peopleTitle"><h2>What People Are Saying...</h2></div>
+    <div class="d-flex flex-row">
+        <div class="flexCard">
+            <div><img src="./img/woman1.jpg" class="img-thumbnail rounded-circle shadow-lg mb-5 bg-body rounded" alt=""></div>
+            <div><h2>Margaret E.</h2></div>
+            <div><p>"This is fantastic!! It looks Amazing!"</p></div>
+        </div>
+        <div class="flexCard">
+            <div><img src="./img/woman2.jpg" class="img-thumbnail rounded-circle shadow-lg mb-5 bg-body rounded" alt=""></div>
+            <div><h2>Caroline H.</h2></div>
+            <div><p>"Bootstrap is Amazin, I've been using it since I was born, it was my first toy"</p></div>
+        </div>
+        <div class="flexCard">
+            <div><img src="./img/woman3.jpg" class="img-thumbnail rounded-circle shadow-lg mb-5 bg-body rounded" alt=""></div>
+            <div><h2>Sarah B.</h2></div>
+            <div>
+                <p>"I never learned to use CSS properly, so Bootstrap have become my hero and savior and I cannot do anything
+                    without it"</p>
+            </div>
+        </div>
     </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-	<a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Connect to Start Bootstrap:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- BOOTSTRAP JS-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+</div>
+    <!-- END OF WHAT PEOPLE ARE SAYING -->
