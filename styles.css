@@ -1,3 +1,9 @@
+/* <!-- NAVBAR --> */
+.bi-bootstrap-fill{
+    font-size: 2em;
+    color: rgb(133, 0, 163);
+}
+/* <!-- END OF NAVBAR --> */
 /* <!-- HERO SECTION --> */
 .centerHero {
     height: 100vh;
@@ -127,6 +133,10 @@
 .footerTextLinks h6 {
     color: rgba(43, 114, 202);
     margin: 0vh 1.5vw;
+}
+
+.footerTextLinks a {
+    text-decoration: none;
 }
 
 .rightsReserved p {
